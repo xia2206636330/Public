@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>todays</display-name>
+  <welcome-file-list>
+   
+    <welcome-file>indexServlet</welcome-file>
+    
+  </welcome-file-list>
+  
+  
+  
+  
+  
+  <!-- 自己寫的測試頁面 -->
+  <servlet>
+	  <servlet-name>login</servlet-name>
+	  <servlet-class>servlet.ServletLogin</servlet-class> 
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>login</servlet-name>
+	  <url-pattern>/Myloginservlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <!-- 登錄頁面 -->
+  <servlet>
+	  <servlet-name>Newslogin</servlet-name>
+	  <servlet-class>servlet.LoginServlet</servlet-class> 
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>Newslogin</servlet-name>
+	  <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+   <!-- 添加信息頁面 -->
+  <servlet>
+	  <servlet-name>AddNews</servlet-name>
+	  <servlet-class>servlet.UploadServlet</servlet-class> 
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>AddNews</servlet-name>
+	  <url-pattern>/uploadServlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>
